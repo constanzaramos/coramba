@@ -392,7 +392,7 @@ span{
     transition: 0.5s ease;
 }
 .projects-box:hover .projects-info:hover{
-    background: radial-gradient(rgba(255,106,0,0.8), var(--main-color));
+    background: radial-gradient(rgba(1, 67, 67, 0.8), var(--main-color));
     transform: scale(1.1);
 }
 .projects-info h4{
@@ -414,6 +414,7 @@ span{
     background: white;
     border: 2px solid var(--main-color);
     border-radius: 50%;
+    background: black;
 }
 .projects-info a i{
     font-size: 3rem;
