@@ -24,3 +24,52 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    let readMoreBtn = document.getElementById("read-more-btn");
+    if (readMoreBtn) {
+      readMoreBtn.addEventListener("click", function () {
+        let moreText = document.getElementById("more-about");
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+          moreText.style.display = "block";
+          readMoreBtn.textContent = "Read Less";
+        } else {
+          moreText.style.display = "none";
+          readMoreBtn.textContent = "Read More";
+        }
+      });
+    }
+  });
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    var form = event.target;
+    var formData = new FormData(form);
+
+
+    var jsonObject = {};
+    formData.forEach((value, key) => {
+      jsonObject[key] = value;
+    });
+
+    fetch("https://formspree.io/f/mzzepzdb", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(jsonObject)
+    })
+    .then(response => {
+      if (response.ok) {
+        document.getElementById("form-message").style.display = "block";
+        form.reset();
+      } else {
+        alert("Oops! Something went wrong, please try again.");
+      }
+    })
+    .catch(error => {
+      alert("Oops! Something went wrong, please try again.");
+    });
+  });
