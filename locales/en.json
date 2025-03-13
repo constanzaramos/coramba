@@ -1,0 +1,49 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "home":{
+        "hi": "Hi",
+        "its": "It's",
+        "im": "I'm a",
+        "name":"Constanza",
+        "description": "Frontend developer with experience in digital marketing and UX, focused in creating innovative and user-centered solutions",
+        "button":"Checkout my resume" 
+    },
+    "about": {
+      "title": "About Me",
+      "text": "From nutrition to web development and digital marketing. My journey is anything but conventional and each step has allowed me develop innovative and people-centered solutions. Do you want to know more?",
+      "paragraph1": "My professional path has been anything but conventional, and I believe that's precisely my greatest strength. I've always been motivated by curiosity, the desire to learn and the ability to adapt to new challenges. My training began in the health area, studying to become a Dietitian with the purpose of improving people's quality of life through food. I worked with users, designed personalized nutritional plans and focused on communicating information in a clear and accessible way.",
+      "paragraph2": "However, during my practise, I discovered something that caught my attention even more: the way in which technology could enhance communication and improve the user experience. This interest led me to develop my own online practice, learning on my own about web design,web development, user experience and the importance of digital accessibility. At that time, I didn't know it yet, but that concern would be the first step in an important turn in my career.",
+      "paragraph3": "It was during the pandemic when I decided to make a definitive leap into the world of web development. I joined the Laboratoria bootcamp, where I immersed myself in frontend development and discovered my passion for building functional, accessible, and attractive digital experiences. I not only acquired technical knowledge in HTML, CSS, JavaScript, and frameworks like React, but I also strengthened key skills such as problem-solving, teamwork, and agile methodology.",
+      "paragraph4":"Over time, my journey led me to work at Mercado Libre in the digital marketing area, specifically on the Display Ads platform. There, I combined my technical skills with a strategic approach, developing features that enhanced the advertiser experience and improved platform performance. This experience allowed me to bridge two worlds I’m passionate about: technology and marketing, gaining a deeper understanding of how development decisions directly impact business goals and user experience.",
+      "paragraph5":"Throughout my journey, I’ve developed a multidisciplinary approach that allows me to see projects from different perspectives. I’m not only interested in the technical side of development but also in the strategy behind each product. I enjoy designing solutions that are not only functional but also intuitive, scalable, and aligned with user needs.",
+      "paragraph6": "I consider myself a creative, solution-oriented person with a strong ability to learn. I’m driven by innovation, the opportunity to explore new technologies, and the chance to work on projects that create a real impact. My background in nutrition taught me the importance of empathy and effective communication, while development and marketing have allowed me to apply those skills in a digital environment, creating experiences that truly connect with people.",
+      "paragraph7": "If you're looking for someone with a holistic vision who blends technology, strategy, and creativity to develop effective solutions, I’d love to collaborate with you. I’m always open to new challenges and opportunities where I can contribute my experience and keep learning.",
+      "button": "Read more"
+    },
+    "services":{
+        "title": "Services",
+        "service1": "Web Development",
+        "service2": "Digital Marketing",
+        "service3": "UX Writting",
+        "description1": "I design and develop responsive, high-performance websites that prioritize usability and aesthetics. By leveraging modern technologies like HTML, CSS, JavaScript, and frameworks like React, I ensure seamless functionality, accessibility, and an engaging user experience.",
+        "description2": "I develop strategic, data-driven marketing campaigns to enhance brand presence, increase engagement, and drive conversions. Through SEO, content marketing, and performance advertising, I help businesses connect with their audience effectively and maximize their online impact.",
+        "description3": "I craft clear, concise, and engaging content that enhances user experience across digital platforms. By understanding user behavior and brand voice, I create intuitive, user-friendly content that improves navigation, reduces friction, and strengthens communication."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  }
+  

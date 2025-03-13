@@ -1,0 +1,49 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "services": "Servicios",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "contact": "Contacto"
+    },
+    "home":{
+        "hi": "Hola",
+        "its": "Soy",
+        "name":"Constanza",
+        "im": "Soy",
+        "description": "Desarrolladora frontend con experiencia en marketing digital y UX, creando soluciones innovadoras y centradas en el usuario.",
+        "button":"Revisa mi currículum" 
+    },
+    "about": {
+      "title": "Sobre mi",
+      "text": "De la nutrición al desarrollo web y el marketing digital. Mi trayectoria es todo menos convencional y cada paso me ha permitido desarrollar soluciones innovadoras y centradas en las personas. ¿Quieres saber más?",
+      "paragraph1": " Mi camino profesional ha sido todo menos convencional, y creo que esa es precisamente mi mayor fortaleza. Siempre me ha movido la curiosidad, el deseo de aprender y la capacidad de adaptarme a nuevos desafíos. Mi formación comenzó en el área de la salud, estudiando Nutrición y Dietética con el propósito de mejorar la calidad de vida de las personas a través de la alimentación. Trabajé con usuarios, diseñé planes nutricionales personalizados y me enfoqué en comunicar información de manera clara y accesible.",
+      "paragraph2": "Sin embargo, en el ejercicio de mi profesión, descubrí que algo me llamaba aún más la atención: la manera en que la tecnología podía potenciar la comunicación y mejorar la experiencia de los usuarios. Este interés me llevó a desarrollar mi propia consulta online, aprendiendo por mi cuenta sobre diseño web, experiencia de usuario y la importancia de la accesibilidad digital. En ese momento, aún no lo sabía, pero esa inquietud sería el primer paso de un giro importante en mi carrera.",
+      "paragraph3": "Fue durante la pandemia cuando decidí dar un salto definitivo al mundo del desarrollo web. Ingresé al bootcamp de Laboratoria, donde me sumergí en el desarrollo frontend y descubrí mi pasión por construir experiencias digitales funcionales, accesibles y atractivas. No solo adquirí conocimientos técnicos en HTML, CSS, JavaScript y frameworks como React, sino que también fortalecí habilidades clave como la resolución de problemas, el trabajo en equipo y la metodología ágil.",
+      "paragraph4": "Con el tiempo, mi camino me llevó a trabajar en Mercado Libre, dentro del área de marketing digital, específicamente en la plataforma de publicidad Display Ads. Allí, combiné mis habilidades técnicas con un enfoque estratégico, desarrollando features que optimizaban la experiencia de los anunciantes y mejoraban el rendimiento de la plataforma. Esta experiencia me permitió conectar dos mundos que me apasionan: la tecnología y el marketing, entendiendo cómo las decisiones de desarrollo impactan directamente en los objetivos de negocio y en la experiencia del usuario.",
+      "paragraph5": "A lo largo de mi trayectoria, he cultivado un enfoque multidisciplinario que me permite ver los proyectos desde diferentes perspectivas. No solo me interesa la parte técnica del desarrollo, sino también la estrategia detrás de cada producto. Disfruto diseñar soluciones que no solo sean funcionales, sino también intuitivas, escalables y alineadas con las necesidades del usuario.",
+      "paragraph6": "Me considero persona creativa, resolutiva y con una gran capacidad de aprendizaje. Me motiva la innovación, la posibilidad de explorar nuevas tecnologías y la oportunidad de trabajar en proyectos que generen un impacto real. Mi experiencia en nutrición me enseñó la importancia de la empatía y la comunicación efectiva, mientras que el desarrollo y el marketing me han permitido aplicar esas habilidades en un entorno digital, creando experiencias que conectan con las personas.",
+      "paragraph7": "Si buscas a alguien con una visión integral, que combine tecnología, estrategia y creatividad para desarrollar soluciones efectivas, estaré encantada de colaborar contigo. Estoy siempre abierta a nuevos desafíos y oportunidades donde pueda aportar mi experiencia y seguir aprendiendo.",
+      "button": "Leer más"
+    },
+    "services":{
+        "title": "Servicios",
+        "service1": "Desarrollo Web",
+        "service2": "Marketing Digital",
+        "service3": "Redacción UX",
+        "description1": " Diseño y desarrollo sitios web responsivos y de alto rendimiento, priorizando la usabilidad y la estética. Utilizo tecnologías modernas como HTML, CSS, JavaScript y frameworks como React para garantizar funcionalidad, accesibilidad y una experiencia de usuario fluida.",
+        "description2": "Desarrollo estrategias de marketing basadas en datos para mejorar la presencia de marca, aumentar la interacción y optimizar conversiones. A través de SEO, marketing de contenidos y publicidad digital, ayudo a las marcas a conectar de manera efectiva con su audiencia y maximizar su impacto en línea.",
+        "description3": "Redacto contenido claro, conciso y atractivo que mejora la experiencia del usuario en plataformas digitales. A través de un enfoque centrado en el usuario y alineado con la voz de la marca, creo textos intuitivos que facilitan la navegación, reducen fricciones y optimizan la comunicación."
+    },
+    "contact": {
+      "title": "Contáctame",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "subject": "Asunto",
+      "message": "Tu mensaje",
+      "send": "Enviar mensaje"
+    }
+  }
+  

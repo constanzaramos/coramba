@@ -73,3 +73,61 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Oops! Something went wrong, please try again.");
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    i18next
+      .use(i18nextHttpBackend)
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        debug: true,
+        fallbackLng: "en",
+        backend: {
+          loadPath: "locales/{{lng}}.json"
+        }
+      }, function (err, t) {
+        if (err) return console.error(err);
+        updateContent();
+      });
+  
+    function updateContent() {
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        element.textContent = i18next.t(key);
+      });
+  
+      document.querySelector('input[name="name"]').placeholder = i18next.t("contact.name");
+      document.querySelector('input[name="email"]').placeholder = i18next.t("contact.email");
+      document.querySelector('input[name="phone"]').placeholder = i18next.t("contact.phone");
+      document.querySelector('input[name="subject"]').placeholder = i18next.t("contact.subject");
+      document.querySelector('textarea[name="message"]').placeholder = i18next.t("contact.message");
+      document.querySelector('input[type="submit"]').value = i18next.t("contact.send");
+    }
+  
+    document.getElementById("language-switcher").addEventListener("change", function () {
+      const selectedLanguage = this.value;
+      i18next.changeLanguage(selectedLanguage, updateContent);
+      localStorage.setItem("language", selectedLanguage);
+    });
+  
+    const savedLanguage = localStorage.getItem("language") || "en";
+    document.getElementById("language-switcher").value = savedLanguage;
+    i18next.changeLanguage(savedLanguage, updateContent);
+  });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const resumeBtn = document.getElementById("resume-btn");
+    const languageSwitcher = document.getElementById("language-switcher");
+  
+    function updateResumeLink() {
+      const selectedLanguage = languageSwitcher.value;
+      if (selectedLanguage === "es") {
+        resumeBtn.href =  "./assets/resume/Constanza Ramos CV Español.pdf"
+      } else {
+        resumeBtn.href = "./assets/resume/Constanza Ramos Resume.pdf"; 
+      }
+    }
+  
+    updateResumeLink();
+  
+    languageSwitcher.addEventListener("change", updateResumeLink);
+  });

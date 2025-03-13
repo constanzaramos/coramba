@@ -73,6 +73,7 @@ body{
 #menu-icon{
     font-size: 3.6rem;
     color: var(--main-color);
+    display: none;
 }
 
 section{
@@ -309,21 +310,24 @@ span{
 }
 .service-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
+    padding-bottom: 7rem;
 }
 .service-container .services-box{
-    flex: 1 1 calc(33.333%);
-    background: var(--bg-color);
+    flex: 1 1 calc(33.333% - 2rem); 
+    background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: 0.2rem solid rgb(224,224,224);
-    cursor: pointer;
-    transition: 0.4 ease;
+    transition: 0.4s ease-in-out;
     min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service-container .services-box:hover{
     border-color: var(--main-color);
@@ -334,14 +338,31 @@ span{
 .services-box i{
     font-size: 7rem;
     color: var(--main-color);
+    margin-bottom: 1rem;
 }
 .services-box h3{
     font-size: 2.6rem;
+    margin-bottom: 1rem;
 }
 .services-box p{
     font-size: 1.6rem;
-    margin: 1rem 0 3rem ;
+    margin: 1rem 0 2rem ;
 }
+
+@media (max-width: 1024px) {
+    .service-container {
+        justify-content: center;
+    }
+    .service-container .services-box {
+        flex: 1 1 calc(50% - 2rem);
+}
+
+@media (max-width: 768px) {
+    .service-container .services-box {
+        flex: 1 1 100%; 
+    }
+}
+ }
 
 ::-webkit-scrollbar{
     width: 15px;
@@ -532,7 +553,8 @@ span{
         padding: 2rem 3%;
     }
     section{
-        padding: 10rem 3% 2rem;
+        padding: 6rem 9% 6rem; 
+
     }
    .contact-form{
     flex-direction: column;
@@ -590,5 +612,96 @@ span{
     }
     .services-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#language-switcher {
+    border: none;
+    background: transparent;
+    color: var(--main-color);
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 15px;
+    padding: 5px;
+  }
+  
+  #language-switcher option {
+    background-color: black;
+    color:white;
+    
+  }
+  
+  @media (max-width: 768px) {
+    #language-switcher {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+
+  .skills {
+    background: var(--bg-color);
+    padding: 5rem 9%;
+    text-align: center;
+}
+.skills .heading {
+    font-size: 4rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.skill-box {
+    background: var(--bg-color);
+    padding: 3rem; 
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    height: 120px; 
+}
+.skill-box i {
+    font-size: 4.5rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem; 
+}
+
+.skill-box span {
+    font-size: 1.6rem; 
+    font-weight: 600;
+    color: var(--text-color);
+    display: block; 
+}
+.skill-box:hover {
+    transform: scale(1.2);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); 
     }
 }

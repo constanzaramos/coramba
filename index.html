@@ -22,7 +22,6 @@
       content="Explora mi trayectoria desde la nutrición hasta el desarrollo web y el marketing digital."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/portfolio-img.png" />
     <meta property="og:url" content="https://tusitio.com" />
 
     <link rel="stylesheet" href="style.css" />
@@ -38,23 +37,24 @@
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#" data-i18n="nav.home"></a>
+        <a href="#about" data-i18n="nav.about"></a>
+        <a href="#services" data-i18n="nav.services"></a>
+        <a href="#projects" data-i18n="nav.projects"></a>
+        <a href="#skills" data-i18n="nav.skills"></a>
+        <a href="#contact" data-i18n="nav.contact"></a>
       </nav>
+      <select id="language-switcher">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
     </header>
     <section class="home">
       <div class="home-content">
-        <h3>Hi</h3>
-        <h1>It's <span>Constanza</span></h1>
+        <h3 data-i18n="home.hi">Hi</h3>
+        <h1><span data-i18n="home.its"></span> <span>Constanza</span></h1>
         <h3 class="text-animation">I'm a <span></span></h3>
-        <p>
-          Desarrolladora frontend con experiencia en marketing digital y UX,
-          creando soluciones innovadoras y centradas en el usuario.
-        </p>
+        <p data-i18n="home.description"></p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/constanzaramos/" target="_blank"
             ><i class="bx bxl-linkedin-square"></i
@@ -63,139 +63,65 @@
             ><i class="bx bxl-github"></i
           ></a>
         </div>
-        <a href="#" class="btn">Checkout my resume</a>
+        <a
+          id="resume-btn"
+          data-i18n="home.button"
+          target="_blank"
+          href="#"
+          class="btn"
+        ></a>
       </div>
       <div class="home-img">
-        <img src="./assets/lego.jpg" alt="Profile picture" />
+        <img src="./assets/profile-pic (10).png" alt="Profile picture" />
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="./assets/lego2.JPG" alt="lego avatar of Constanza" />
+        <img
+          src="./assets/profile-pic (11).png"
+          alt="lego avatar of Constanza"
+        />
       </div>
       <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <p>
-          De la nutrición al desarrollo web y el marketing digital. Mi
-          trayectoria es todo menos convencional y cada paso me ha permitido
-          desarrollar soluciones innovadoras y centradas en las personas.
-          ¿Quieres saber más?
-        </p>
+        <h2 data-i18n="about.title" class="heading">About <span>Me</span></h2>
+        <p data-i18n="about.text"></p>
 
         <div id="more-about" style="display: none">
-          <p>
-            Mi camino profesional ha sido todo menos convencional, y creo que
-            esa es precisamente mi mayor fortaleza. Siempre me ha movido la
-            curiosidad, el deseo de aprender y la capacidad de adaptarme a
-            nuevos desafíos. Mi formación comenzó en el área de la salud,
-            estudiando Nutrición y Dietética con el propósito de mejorar la
-            calidad de vida de las personas a través de la alimentación. Trabajé
-            con usuarios, diseñé planes nutricionales personalizados y me
-            enfoqué en comunicar información de manera clara y accesible.
-          </p>
+          <p data-i18n="about.paragraph1"></p>
+          <p data-i18n="about.paragraph2"></p>
 
-          <p>
-            Sin embargo, en el ejercicio de mi profesión, descubrí que algo me
-            llamaba aún más la atención: la manera en que la tecnología podía
-            potenciar la comunicación y mejorar la experiencia de los usuarios.
-            Este interés me llevó a desarrollar mi propia consulta online,
-            aprendiendo por mi cuenta sobre diseño web, experiencia de usuario y
-            la importancia de la accesibilidad digital. En ese momento, aún no
-            lo sabía, pero esa inquietud sería el primer paso de un giro
-            importante en mi carrera.
-          </p>
+          <p data-i18n="about.paragraph3"></p>
 
-          <p>
-            Fue durante la pandemia cuando decidí dar un salto definitivo al
-            mundo del desarrollo web. Ingresé al bootcamp de Laboratoria, donde
-            me sumergí en el desarrollo frontend y descubrí mi pasión por
-            construir experiencias digitales funcionales, accesibles y
-            atractivas. No solo adquirí conocimientos técnicos en HTML, CSS,
-            JavaScript y frameworks como React, sino que también fortalecí
-            habilidades clave como la resolución de problemas, el trabajo en
-            equipo y la metodología ágil.
-          </p>
+          <p data-i18n="about.paragraph4"></p>
 
-          <p>
-            Con el tiempo, mi camino me llevó a trabajar en Mercado Libre,
-            dentro del área de marketing digital, específicamente en la
-            plataforma de publicidad Display Ads. Allí, combiné mis habilidades
-            técnicas con un enfoque estratégico, desarrollando features que
-            optimizaban la experiencia de los anunciantes y mejoraban el
-            rendimiento de la plataforma. Esta experiencia me permitió conectar
-            dos mundos que me apasionan: la tecnología y el marketing,
-            entendiendo cómo las decisiones de desarrollo impactan directamente
-            en los objetivos de negocio y en la experiencia del usuario.
-          </p>
+          <p data-i18n="about.paragraph5"></p>
 
-          <p>
-            A lo largo de mi trayectoria, he cultivado un enfoque
-            multidisciplinario que me permite ver los proyectos desde diferentes
-            perspectivas. No solo me interesa la parte técnica del desarrollo,
-            sino también la estrategia detrás de cada producto. Disfruto diseñar
-            soluciones que no solo sean funcionales, sino también intuitivas,
-            escalables y alineadas con las necesidades del usuario.
-          </p>
+          <p data-i18n="about.paragraph6"></p>
 
-          <p>
-            Me considero persona creativa, resolutiva y con una gran capacidad
-            de aprendizaje. Me motiva la innovación, la posibilidad de explorar
-            nuevas tecnologías y la oportunidad de trabajar en proyectos que
-            generen un impacto real. Mi experiencia en nutrición me enseñó la
-            importancia de la empatía y la comunicación efectiva, mientras que
-            el desarrollo y el marketing me han permitido aplicar esas
-            habilidades en un entorno digital, creando experiencias que conectan
-            con las personas.
-          </p>
-
-          <p>
-            Si buscas a alguien con una visión integral, que combine tecnología,
-            estrategia y creatividad para desarrollar soluciones efectivas,
-            estaré encantada de colaborar contigo. Estoy siempre abierta a
-            nuevos desafíos y oportunidades donde pueda aportar mi experiencia y
-            seguir aprendiendo.
-          </p>
+          <p data-i18n="about.paragraph7"></p>
         </div>
-        <a id="read-more-btn" class="btn">Read More</a>
+        <a data-i18n="about.button" id="read-more-btn" class="btn"></a>
       </div>
     </section>
 
     <section class="services" id="services">
-      <h2 class="heading">Services</h2>
+      <h2 data-i18n="services.title" class="heading">Services</h2>
       <div class="service-container">
         <div class="services-box">
           <i class="bx bx-code-block"></i>
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum
-            voluptatem architecto laudantium neque natus ipsum doloribus. Quam
-            hic quia ratione dignissimos eum deserunt, saepe, expedita
-            perferendis fuga qui est.
-          </p>
-          <a href="#" class="btn">Read More</a>
+          <h3 data-i18n="services.service1"></h3>
+          <p data-i18n="services.description1"></p>
         </div>
         <div class="services-box">
           <i class="bx bxs-network-chart"></i>
-          <h3>Digital Marketing</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum
-            voluptatem architecto laudantium neque natus ipsum doloribus. Quam
-            hic quia ratione dignissimos eum deserunt, saepe, expedita
-            perferendis fuga qui est.
-          </p>
-          <a href="#" class="btn">Read More</a>
+          <h3 data-i18n="services.service2"></h3>
+          <p data-i18n="services.description2"></p>
         </div>
         <div class="services-box">
           <i class="bx bxs-pencil"></i>
-          <h3>Ux Writting</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum
-            voluptatem architecto laudantium neque natus ipsum doloribus. Quam
-            hic quia ratione dignissimos eum deserunt, saepe, expedita
-            perferendis fuga qui est.
-          </p>
-          <a href="#" class="btn">Read More</a>
+          <h3 data-i18n="services.service3"></h3>
+          <p data-i18n="services.description3"></p>
         </div>
       </div>
     </section>
@@ -244,6 +170,68 @@
 
     <section class="skills" id="skills">
       <h2 class="heading">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="bx bxl-javascript"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-html5"></i>
+          <span>HTML </span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-css3"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-sass"></i>
+          <span>Sass</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-react"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-typescript"></i>
+          <span>Typescript</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-nodejs"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-git"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-github"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-wordpress"></i>
+          <span>WordPress</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-figma"></i>
+          <span>Figma</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bx-search-alt-2"></i>
+          <span>SEO</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bx-line-chart"></i>
+          <span>Google Analytics</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxs-edit-alt"></i>
+          <span>Copywriting</span>
+        </div>
+        <div class="skill-box">
+          <i class="bx bx-group"></i>
+          <span>Agile Methodologies</span>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contact">
@@ -304,7 +292,7 @@
         id="form-message"
         style="
           display: none;
-          color:white;
+          color: white;
           text-align: center;
           font-size: 1.8rem;
         "
@@ -343,5 +331,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
   </body>
 </html>
