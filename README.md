@@ -1,7 +1,7 @@
 # Constanza's Portfolio - Web Development & Digital Marketing
 
 ## 🌐 Live Demo
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-brightgreen)](https://tusitio.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-brightgreen)](https://constanzaramos.github.io/coramba/)
 
 ## 📌 Description
 This is the personal portfolio of **Constanza Ramos**, a frontend developer and digital marketing specialist. The site showcases her experience, projects, and skills in web development, UX, SEO, and digital strategies.
@@ -41,5 +41,5 @@ This is the personal portfolio of **Constanza Ramos**, a frontend developer and 
 ## 📬 Contact
 If you have any suggestions or would like to collaborate, you can reach me via:
 - 💼 [LinkedIn](https://www.linkedin.com/in/constanzaramos/)
-- 📧 [Email](mailto:c.ramosgamboa@gmail.com)
+- 📧 [Email](c.ramosgamboa@gmail.com)
 
