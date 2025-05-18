@@ -19,24 +19,16 @@ This is the personal portfolio of **Constanza Ramos**, a frontend developer and 
 - **Libraries**: Boxicons, i18next
 - **Tools**: GitHub, Formspree (for contact forms)
 
-## 📂 Project Structure
-```
-📂 Coramba-Portfolio/
-├── 📁 assets/               # Images and media files
-├── 📁 css/                  # Stylesheets
-├── 📁 js/                   # JavaScript files
-├── 📄 index.html            # Main page
-├── 📄 style.css             # Main stylesheet
-├── 📄 script.js             # Interactive functionalities
-└── 📄 README.md             # Project documentation
-```
-
 ## 📖 Installation and Usage
 1. Clone this repository:
    ```sh
    git clone https://github.com/constanzaramos/coramba-portfolio.git
    ```
 2. Open `index.html` in your browser.
+## 📸 Capturas
+![Vista principal del temporizador](./assets/Pomodoro-Timer.png) 
+ ![Modo responsive en móvil](./assets/mobile.png)
+
 
 ## 📬 Contact
 If you have any suggestions or would like to collaborate, you can reach me via:
