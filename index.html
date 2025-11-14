@@ -128,7 +128,11 @@
 
     <section class="projects" id="projects">
       <h2 data-i18n="projects.title" class="heading">Projects</h2>
-      <div class="projects-container">
+      <div class="projects-carousel-wrapper">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous projects">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+        <div class="projects-container">
         <div class="projects-box">
           <img src="./assets/Pomodoro-Timer.png" alt="" />
           <div class="projects-info">
@@ -147,8 +151,8 @@
         <div class="projects-box">
           <img src="./assets/fintech (1).png" alt="Fintech Landing project screenshot" />
           <div class="projects-info">
-            <h4>Fintech Landing</h4>
-            <p>Modern fintech landing page showcasing financial technology solutions and services.</p>
+            <h4 data-i18n="projects.fintech.title">Fintech Landing</h4>
+            <p data-i18n="projects.fintech.description"></p>
             <div class="projects-links">
               <a href="https://github.com/constanzaramos/fintech-landing" target="_blank">
                 <i class="bx bxl-github"></i>
@@ -162,8 +166,8 @@
         <div class="projects-box">
           <img src="./assets/taller.png" alt="Taller Radar project screenshot" />
           <div class="projects-info">
-            <h4>Taller Radar</h4>
-            <p>Web application project showcasing automotive services and workshop management.</p>
+            <h4 data-i18n="projects.taller.title">Taller Radar</h4>
+            <p data-i18n="projects.taller.description"></p>
             <div class="projects-links">
               <a href="https://github.com/constanzaramos/taller-radar" target="_blank">
                 <i class="bx bxl-github"></i>
@@ -177,8 +181,8 @@
         <div class="projects-box">
           <img src="./assets/skincare.png" alt="Skincare Shop project screenshot" />
           <div class="projects-info">
-            <h4>Skincare Shop</h4>
-            <p>Ecommerce de cosmética natural y cuidado personal desarrollado con React JS, SCSS Modules y Firebase Firestore.</p>
+            <h4 data-i18n="projects.skincare.title">Skincare Shop</h4>
+            <p data-i18n="projects.skincare.description"></p>
             <div class="projects-links">
               <a href="https://github.com/constanzaramos/skincare-shop" target="_blank">
                 <i class="bx bxl-github"></i>
@@ -192,8 +196,8 @@
         <div class="projects-box">
           <img src="./assets/recipe.png" alt="Recipe App project screenshot" />
           <div class="projects-info">
-            <h4>My Recipe App</h4>
-            <p>Recipe search application built with vanilla JavaScript, HTML5, and CSS3. Search recipes by ingredients, category, or cuisine.</p>
+            <h4 data-i18n="projects.recipe.title">My Recipe App</h4>
+            <p data-i18n="projects.recipe.description"></p>
             <div class="projects-links">
               <a href="https://github.com/constanzaramos/recipe-app" target="_blank">
                 <i class="bx bxl-github"></i>
@@ -204,6 +208,22 @@
             </div>
           </div>
         </div>
+        <div class="projects-box">
+          <img src="./assets/minea.png" alt="Minea website screenshot" />
+          <div class="projects-info">
+            <h4 data-i18n="projects.minea.title">Minea</h4>
+            <p data-i18n="projects.minea.description"></p>
+            <div class="projects-links">
+              <a href="https://minea.site" target="_blank">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="carousel-btn carousel-btn-next" aria-label="Next projects">
+          <i class="bx bx-chevron-right"></i>
+        </button>
       </div>
     </section>
 

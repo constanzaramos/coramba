@@ -53,15 +53,27 @@
       "title": "Proyectos",
       "pomodoro": {
         "title": "Pomodoro Timer",
-        "description": "Timer Pomodoro para organizar tus tiempos"
+        "description": "Aplicación de temporizador enfocada en la productividad que implementa la Técnica Pomodoro. Incluye intervalos personalizables de trabajo y descanso, seguimiento de sesiones y una interfaz limpia y minimalista para optimizar la gestión del tiempo y la concentración."
       },
-      "portfolio": {
-        "title": "Portfolio",
-        "description": "Portfolio personal responsivo de una página usando HTML, CSS y Javascript."
+      "fintech": {
+        "title": "Fintech Landing",
+        "description": "Landing page moderna y responsive para una plataforma fintech. Desarrollada con la librería de animaciones Framer Motion, componentes interactivos y un diseño centrado en el usuario que comunica efectivamente soluciones de tecnología financiera."
       },
-      "webdesign": {
-        "title": "Diseño Web",
-        "description": "Soluciones de diseño web creativas y funcionales"
+      "taller": {
+        "title": "Taller Radar",
+        "description": "Plataforma web que conecta usuarios con talleres locales. Incluye funcionalidad de búsqueda completa, listados de servicios e interfaz intuitiva diseñada para simplificar el proceso de búsqueda y reserva de talleres de distinto tipo."
+      },
+      "skincare": {
+        "title": "Skincare Shop",
+        "description": "Plataforma de e-commerce completa para productos de cosmética natural y cuidado personal. Desarrollada con React.js, SCSS y Firebase Firestore, incluye catálogo de productos, carrito de compras, autenticación de usuarios y experiencia de compra fluida."
+      },
+      "recipe": {
+        "title": "My Recipe App",
+        "description": "Aplicación interactiva de descubrimiento de recetas desarrollada con JavaScript y la API de the meal db. Permite a los usuarios buscar recetas por ingredientes, filtrar por categoría y cocina, y navegar alfabéticamente, proporcionando una forma intuitiva de explorar ideas culinarias."
+      },
+      "minea": {
+        "title": "Minea",
+        "description": "Sitio web en WordPress con principios de diseño moderno, funcionalidad personalizada y layouts responsive. Optimizado para rendimiento, accesibilidad y experiencia de usuario, demostrando soluciones efectivas de gestión de contenido y diseño."
       }
     },
     "skills": {

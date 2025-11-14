@@ -53,7 +53,27 @@
       "title": "Projects",
       "pomodoro": {
         "title": "Pomodoro Timer",
-        "description": "Pomodoro timer to organize your time"
+        "description": "Productivity-focused timer application implementing the Pomodoro Technique. Features customizable work and break intervals, session tracking, and a clean, minimalist interface to help optimize time management and focus."
+      },
+      "fintech": {
+        "title": "Fintech Landing",
+        "description": "Modern, responsive landing page for a fintech platform. Built with HTML, CSS, and JavaScript, featuring smooth animations, interactive components, and a user-centric design that effectively communicates financial technology solutions."
+      },
+      "taller": {
+        "title": "Taller Radar",
+        "description": "Web platform connecting users with automotive workshops and services. Features comprehensive search functionality, service listings, and an intuitive interface designed to streamline the process of finding and booking automotive services."
+      },
+      "skincare": {
+        "title": "Skincare Shop",
+        "description": "Full-featured e-commerce platform for natural skincare and personal care products. Developed with React.js, SCSS Modules, and Firebase Firestore, featuring product catalog, shopping cart, user authentication, and seamless shopping experience."
+      },
+      "recipe": {
+        "title": "My Recipe App",
+        "description": "Interactive recipe discovery application built with vanilla JavaScript, HTML5, and CSS3. Enables users to search recipes by ingredients, filter by category and cuisine, and browse alphabetically, providing an intuitive way to explore culinary ideas."
+      },
+      "minea": {
+        "title": "Minea",
+        "description": "Professional WordPress website featuring modern design principles, custom functionality, and responsive layouts. Optimized for performance, accessibility, and user experience, showcasing effective content management and design solutions."
       },
       "portfolio": {
         "title": "Portfolio",

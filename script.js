@@ -154,3 +154,37 @@ function setupReadMoreButton() {
   
     languageSwitcher.addEventListener("change", updateResumeLink);
   });
+
+  // Projects Carousel
+  document.addEventListener("DOMContentLoaded", function() {
+    const projectsContainer = document.querySelector('.projects-container');
+    const prevBtn = document.querySelector('.carousel-btn-prev');
+    const nextBtn = document.querySelector('.carousel-btn-next');
+    
+    if (!projectsContainer || !prevBtn || !nextBtn) return;
+    
+    const scrollAmount = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 895) {
+        return projectsContainer.offsetWidth;
+      } else if (screenWidth <= 1285) {
+        return projectsContainer.offsetWidth / 2;
+      } else {
+        return projectsContainer.offsetWidth / 3;
+      }
+    };
+    
+    prevBtn.addEventListener('click', () => {
+      projectsContainer.scrollBy({
+        left: -scrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      projectsContainer.scrollBy({
+        left: scrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+  });
