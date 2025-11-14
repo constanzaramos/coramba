@@ -24,8 +24,10 @@
       "paragraph4":"Over time, my journey led me to work at Mercado Libre in the digital marketing area, specifically on the Display Ads platform. There, I combined my technical skills with a strategic approach, developing features that enhanced the advertiser experience and improved platform performance. This experience allowed me to bridge two worlds I’m passionate about: technology and marketing, gaining a deeper understanding of how development decisions directly impact business goals and user experience.",
       "paragraph5":"Throughout my journey, I’ve developed a multidisciplinary approach that allows me to see projects from different perspectives. I’m not only interested in the technical side of development but also in the strategy behind each product. I enjoy designing solutions that are not only functional but also intuitive, scalable, and aligned with user needs.",
       "paragraph6": "I consider myself a creative, solution-oriented person with a strong ability to learn. I’m driven by innovation, the opportunity to explore new technologies, and the chance to work on projects that create a real impact. My background in nutrition taught me the importance of empathy and effective communication, while development and marketing have allowed me to apply those skills in a digital environment, creating experiences that truly connect with people.",
-      "paragraph7": "If you're looking for someone with a holistic vision who blends technology, strategy, and creativity to develop effective solutions, I’d love to collaborate with you. I’m always open to new challenges and opportunities where I can contribute my experience and keep learning.",
-      "button": "Read more"
+      "paragraph7": "If you're looking for someone with a holistic vision who blends technology, strategy, and creativity to develop effective solutions, I'd love to collaborate with you. I'm always open to new challenges and opportunities where I can contribute my experience and keep learning.",
+      "button": "Read more",
+      "readMore": "Read More",
+      "readLess": "Read Less"
     },
     "services":{
         "title": "Services",
@@ -43,7 +45,38 @@
       "phone": "Phone number",
       "subject": "Subject",
       "message": "Your Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "success": "Your message has been sent successfully! 🚀",
+      "error": "Oops! Something went wrong, please try again."
+    },
+    "projects": {
+      "title": "Projects",
+      "pomodoro": {
+        "title": "Pomodoro Timer",
+        "description": "Pomodoro timer to organize your time"
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "One page responsive personal Portfolio using HTML, CSS and Javascript."
+      },
+      "webdesign": {
+        "title": "Web Design",
+        "description": "Creative and functional web design solutions"
+      }
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "footer": {
+      "faq": "FAQ",
+      "services": "Services",
+      "about": "About Me",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "copyright": "© 2024 Constanza Ramos. All rights reserved"
+    },
+    "language": {
+      "select": "Select a language"
     }
   }
   

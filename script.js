@@ -25,23 +25,27 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+function setupReadMoreButton() {
     let readMoreBtn = document.getElementById("read-more-btn");
     if (readMoreBtn) {
       readMoreBtn.addEventListener("click", function () {
         let moreText = document.getElementById("more-about");
         if (moreText.style.display === "none" || moreText.style.display === "") {
           moreText.style.display = "block";
-          readMoreBtn.textContent = "Read Less";
+          readMoreBtn.textContent = i18next.t("about.readLess");
         } else {
           moreText.style.display = "none";
-          readMoreBtn.textContent = "Read More";
+          readMoreBtn.textContent = i18next.t("about.readMore");
         }
       });
     }
-  });
+  }
 
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
+  document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contact-form");
+    if (!contactForm) return;
+    
+    contactForm.addEventListener("submit", function(event) {
     event.preventDefault(); 
 
     var form = event.target;
@@ -66,11 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("form-message").style.display = "block";
         form.reset();
       } else {
-        alert("Oops! Something went wrong, please try again.");
+        alert(i18next.t("contact.error"));
       }
     })
     .catch(error => {
-      alert("Oops! Something went wrong, please try again.");
+      alert(i18next.t("contact.error"));
+    });
     });
   });
 
@@ -87,12 +92,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }, function (err, t) {
         if (err) return console.error(err);
         updateContent();
+        setupReadMoreButton();
       });
   
     function updateContent() {
+      document.documentElement.lang = i18next.language;
+      
       document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.getAttribute("data-i18n");
         element.textContent = i18next.t(key);
+      });
+  
+      document.querySelectorAll("[data-i18n-aria-label]").forEach(element => {
+        const key = element.getAttribute("data-i18n-aria-label");
+        element.setAttribute("aria-label", i18next.t(key));
       });
   
       document.querySelector('input[name="name"]').placeholder = i18next.t("contact.name");
@@ -101,6 +114,16 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('input[name="subject"]').placeholder = i18next.t("contact.subject");
       document.querySelector('textarea[name="message"]').placeholder = i18next.t("contact.message");
       document.querySelector('input[type="submit"]').value = i18next.t("contact.send");
+      
+      const readMoreBtn = document.getElementById("read-more-btn");
+      if (readMoreBtn) {
+        const moreText = document.getElementById("more-about");
+        if (moreText && moreText.style.display === "block") {
+          readMoreBtn.textContent = i18next.t("about.readLess");
+        } else {
+          readMoreBtn.textContent = i18next.t("about.readMore");
+        }
+      }
     }
   
     document.getElementById("language-switcher").addEventListener("change", function () {

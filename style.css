@@ -11,10 +11,13 @@
 }
 
 :root {
-    --bg-color: #080808;
-    --second-bg-color: #131313;
-    --main-color: #00ffee;
+    --bg-color: #171717;
+    --second-bg-color: #E0D8CB;
+    --main-color: #7691FB;
+    --accent-color: #F9731B;
+    --highlight-color: #FDDA4A;
     --text-color: white;
+    --text-dark: #171717;
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -28,9 +31,20 @@ body{
     color: var(--text-color);
 }
 
-.header{
+body::before {
+    content: '';
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--main-color);
+    z-index: 1000;
+}
+
+.header{
+    position: fixed;
+    top: 4px;
     left: 0;   
     width: 100%;
     padding: 3rem 9%;
@@ -53,6 +67,7 @@ body{
 }
 
 .logo span{
+    color: var(--main-color);
     text-shadow: 0 0 25px var(--main-color);
 }
 
@@ -66,8 +81,8 @@ body{
 }
 .navbar a:hover,
 .navbar a.active{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
 }
 
 #menu-icon{
@@ -87,10 +102,7 @@ section{
     justify-content: center;
     gap: 8rem;
 }
-span{
-    color: var(--main-color);
-}
-.logo span{
+span:not(.logo span):not(.skill-box span){
     color: var(--main-color);
 }
 .home-content h3{
@@ -123,8 +135,8 @@ span{
 }
 .home-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+                0 0 50px var(--accent-color),
+                0 0 100px var(--highlight-color);
 }
 .home-content p{
     font-size: 1.8rem;
@@ -150,11 +162,22 @@ span{
     margin-right: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
     margin-right: 10px;
+    position: relative;
+}
+.social-icons a:nth-child(1) {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+.social-icons a:nth-child(2) {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 .social-icons a:hover{
-    color:black;
-    transform: scale(1.3)translateY(-5px);
-    background-color: var(--main-color);
+    color: var(--text-dark);
+    transform: scale(1.3)translateY(-5px) rotate(360deg);
+    background: var(--highlight-color);
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 25px var(--highlight-color);
 }
 
 .btn{
@@ -163,8 +186,8 @@ span{
     background: var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: black;
-    border: 2px solid transparent;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease;
@@ -172,9 +195,10 @@ span{
 }
 .btn:hover{
     transform: scale(1.05);
-    background: var(--bg-color);
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
+    background: var(--accent-color);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 30px rgba(249, 115, 27, 0.5);
 }
 
 .text-animation{
@@ -259,7 +283,7 @@ span{
     align-items: center;
     justify-content: center;
     gap: 10rem;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 .about-img{
     border-radius: 50%;
@@ -280,13 +304,19 @@ span{
 .about-content h2{
     text-align: left;
     line-height: 1.5;
+    color: var(--text-dark);
+}
+.about-content h2 span{
+    color: var(--main-color);
 }
 .about-content h3{
     font-size: 2.6rem;
+    color: var(--text-dark);
 }
 .about-content p{
     font-size: 1.8rem;
     margin: 2rem 0 3rem;
+    color: var(--text-dark);
 }
 
 .text-animation span::before{
@@ -321,32 +351,64 @@ span{
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: 0.2rem solid rgb(224,224,224);
+    border: 0.2rem solid var(--main-color);
     transition: 0.4s ease-in-out;
     min-width: 300px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--text-dark);
+}
+.service-container .services-box:nth-child(1) {
+    border-color: var(--main-color);
+}
+.service-container .services-box:nth-child(1) i {
+    color: var(--main-color);
+}
+.service-container .services-box:nth-child(2) {
+    border-color: var(--accent-color);
+}
+.service-container .services-box:nth-child(2) i {
+    color: var(--accent-color);
+}
+.service-container .services-box:nth-child(3) {
+    border-color: var(--highlight-color);
+}
+.service-container .services-box:nth-child(3) i {
+    color: var(--highlight-color);
 }
 .service-container .services-box:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
-    background-color: var(--bg-color);
-    color: var(--text-color) ;
+    border-color: var(--highlight-color);
+    transform: scale(1.02) translateY(-5px);
+    background: var(--accent-color);
+    color: var(--text-color);
+    box-shadow: 0 10px 30px rgba(249, 115, 27, 0.4);
+}
+.service-container .services-box:hover i{
+    color: var(--highlight-color);
+    transform: scale(1.1);
 }
 .services-box i{
     font-size: 7rem;
-    color: var(--main-color);
     margin-bottom: 1rem;
+    transition: 0.3s ease;
 }
 .services-box h3{
     font-size: 2.6rem;
     margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+.services-box:hover h3{
+    color: var(--text-color);
 }
 .services-box p{
     font-size: 1.6rem;
-    margin: 1rem 0 2rem ;
+    margin: 1rem 0 2rem;
+    color: var(--text-dark);
+}
+.services-box:hover p{
+    color: var(--text-color);
 }
 
 @media (max-width: 1024px) {
@@ -369,6 +431,10 @@ span{
 }
 ::-webkit-scrollbar-thumb{
     background: var(--main-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--accent-color);
 }
 ::-webkit-scrollbar-track{
     background: var(--bg-color);
@@ -379,22 +445,28 @@ span{
     background: var(--bg-color);
 }
 .projects h2{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 .projects-container{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .projects-container .projects-box{
     position: relative;
     border-radius: 2rem;
     overflow: hidden;
     display: flex;
+    aspect-ratio: 4 / 3;
+    height: 280px;
 }
 .projects-box img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: 0.5s ease;
 }
 .projects-box:hover img{
@@ -411,38 +483,98 @@ span{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 0 2.5rem;
     cursor: pointer;
     transition: 0.5s ease;
+    opacity: 0;
 }
-.projects-box:hover .projects-info:hover{
-    background: radial-gradient(rgba(1, 67, 67, 0.8), var(--main-color));
+.projects-box:hover .projects-info{
+    opacity: 1;
     transform: scale(1.1);
 }
+.projects-box:nth-child(1):hover .projects-info{
+    background: radial-gradient(rgba(118, 145, 251, 0.9), var(--main-color));
+}
+.projects-box:nth-child(2):hover .projects-info{
+    background: radial-gradient(rgba(249, 115, 27, 0.9), var(--accent-color));
+}
+.projects-box:nth-child(3):hover .projects-info{
+    background: radial-gradient(rgba(253, 218, 74, 0.9), var(--highlight-color));
+}
+.projects-box:nth-child(4):hover .projects-info{
+    background: radial-gradient(rgba(118, 145, 251, 0.9), var(--main-color));
+}
+.projects-box:nth-child(5):hover .projects-info{
+    background: radial-gradient(rgba(249, 115, 27, 0.9), var(--accent-color));
+}
 .projects-info h4{
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: white;
     font-weight: 800;
+    margin-bottom: 0.5rem;
 }
 .projects-info p{
-    margin: 0.3rem 0 1rem;
+    margin: 0 0 1rem;
     color: white;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+.projects-info .projects-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 .projects-info a{
     color: white;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: white;
-    border: 2px solid var(--main-color);
+    width: 4rem;
+    height: 4rem;
+    background: rgba(23, 23, 23, 0.7);
+    border: 2px solid var(--highlight-color);
     border-radius: 50%;
-    background: black;
+}
+.projects-box:nth-child(1) .projects-info a {
+    border-color: var(--main-color);
+}
+.projects-box:nth-child(1) .projects-info a i {
+    color: var(--main-color);
+}
+.projects-box:nth-child(2) .projects-info a {
+    border-color: var(--accent-color);
+}
+.projects-box:nth-child(2) .projects-info a i {
+    color: var(--accent-color);
+}
+.projects-box:nth-child(3) .projects-info a {
+    border-color: var(--highlight-color);
+}
+.projects-box:nth-child(3) .projects-info a i {
+    color: var(--highlight-color);
+}
+.projects-box:nth-child(4) .projects-info a {
+    border-color: var(--main-color);
+}
+.projects-box:nth-child(4) .projects-info a i {
+    color: var(--main-color);
+}
+.projects-box:nth-child(5) .projects-info a {
+    border-color: var(--accent-color);
+}
+.projects-box:nth-child(5) .projects-info a i {
+    color: var(--accent-color);
+}
+.projects-info a:hover{
+    background: var(--highlight-color);
+    border-color: var(--highlight-color);
 }
 .projects-info a i{
-    font-size: 3rem;
-    color: var(--main-color);
+    font-size: 2.2rem;
+}
+.projects-info a:hover i{
+    color: var(--text-dark);
 }
 
 .contact{
@@ -475,6 +607,11 @@ span{
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
     resize: none;
+    transition: 0.3s ease;
+}
+.contact form .input-box input:focus, .contact form textarea:focus{
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 15px rgba(236, 211, 134, 0.3);
 }
 .contact-form .btn{
     margin-top: 2rem;
@@ -505,11 +642,20 @@ span{
     margin: 0 10px;
     transition: 0.3s ease-in-out;
 }
+.footer .social a:nth-child(1) {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+.footer .social a:nth-child(2) {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
 .footer .social a:hover{
-    transform: scale(1.2) translateY(-10px);
-    background-color: var(--main-color);
-    color:black;
-    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1.2) translateY(-10px) rotate(360deg);
+    background: var(--highlight-color);
+    color: var(--text-dark);
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 25px var(--highlight-color);
 }
 .footer ul{
     margin-top: 0;
@@ -547,6 +693,12 @@ span{
         grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
+    .projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects-container .projects-box{
+        height: 240px;
+    }
 }
 @media(max-width:991px){
     header{
@@ -573,7 +725,7 @@ span{
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: rgba(0,0,0,0.8);
+        background: rgba(50, 50, 50, 0.95);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
@@ -613,23 +765,37 @@ span{
     .services-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .projects-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .projects-container .projects-box{
+        height: 220px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 #language-switcher {
-    border: none;
-    background: transparent;
+    border: 2px solid var(--main-color);
+    background: var(--bg-color);
     color: var(--main-color);
     font-size: 16px;
     cursor: pointer;
     outline: none;
     margin-left: 15px;
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+  }
+  
+  #language-switcher:hover {
+    border-color: var(--highlight-color);
+    color: var(--highlight-color);
   }
   
   #language-switcher option {
-    background-color: black;
-    color:white;
-    
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
   
   @media (max-width: 768px) {
@@ -641,13 +807,13 @@ span{
 
 
   .skills {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     padding: 5rem 9%;
     text-align: center;
 }
 .skills .heading {
     font-size: 4rem;
-    color: var(--text-color);
+    color: var(--text-dark);
     margin-bottom: 3rem;
 }
 .skills-grid {
@@ -663,29 +829,42 @@ span{
     padding: 3rem; 
     border-radius: 2rem;
     text-align: center;
-    transition: 0.4s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-direction: column; 
-    height: 120px; 
+    height: 120px;
+    border: 2px solid transparent;
+}
+.skill-box:nth-child(3n+1) i {
+    color: var(--main-color);
+}
+.skill-box:nth-child(3n+2) i {
+    color: var(--accent-color);
+}
+.skill-box:nth-child(3n+3) i {
+    color: var(--highlight-color);
 }
 .skill-box i {
     font-size: 4.5rem;
-    color: var(--main-color);
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 .skill-box span {
     font-size: 1.6rem; 
     font-weight: 600;
     color: var(--text-color);
-    display: block; 
+    display: block;
 }
 .skill-box:hover {
-    transform: scale(1.2);
-    background-color: var(--bg-color);
+    background: var(--accent-color);
+    border-color: var(--highlight-color);
+}
+.skill-box:hover i {
+    color: var(--highlight-color);
+}
+.skill-box:hover span {
     color: var(--text-color);
 }
 @media (max-width: 1024px) {

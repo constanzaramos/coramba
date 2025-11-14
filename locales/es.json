@@ -25,7 +25,9 @@
       "paragraph5": "A lo largo de mi trayectoria, he cultivado un enfoque multidisciplinario que me permite ver los proyectos desde diferentes perspectivas. No solo me interesa la parte técnica del desarrollo, sino también la estrategia detrás de cada producto. Disfruto diseñar soluciones que no solo sean funcionales, sino también intuitivas, escalables y alineadas con las necesidades del usuario.",
       "paragraph6": "Me considero persona creativa, resolutiva y con una gran capacidad de aprendizaje. Me motiva la innovación, la posibilidad de explorar nuevas tecnologías y la oportunidad de trabajar en proyectos que generen un impacto real. Mi experiencia en nutrición me enseñó la importancia de la empatía y la comunicación efectiva, mientras que el desarrollo y el marketing me han permitido aplicar esas habilidades en un entorno digital, creando experiencias que conectan con las personas.",
       "paragraph7": "Si buscas a alguien con una visión integral, que combine tecnología, estrategia y creatividad para desarrollar soluciones efectivas, estaré encantada de colaborar contigo. Estoy siempre abierta a nuevos desafíos y oportunidades donde pueda aportar mi experiencia y seguir aprendiendo.",
-      "button": "Leer más"
+      "button": "Leer más",
+      "readMore": "Leer más",
+      "readLess": "Leer menos"
     },
     "services":{
         "title": "Servicios",
@@ -43,7 +45,38 @@
       "phone": "Número de teléfono",
       "subject": "Asunto",
       "message": "Tu mensaje",
-      "send": "Enviar mensaje"
+      "send": "Enviar mensaje",
+      "success": "¡Tu mensaje ha sido enviado exitosamente! 🚀",
+      "error": "¡Oops! Algo salió mal, por favor intenta de nuevo."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "pomodoro": {
+        "title": "Pomodoro Timer",
+        "description": "Timer Pomodoro para organizar tus tiempos"
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Portfolio personal responsivo de una página usando HTML, CSS y Javascript."
+      },
+      "webdesign": {
+        "title": "Diseño Web",
+        "description": "Soluciones de diseño web creativas y funcionales"
+      }
+    },
+    "skills": {
+      "title": "Habilidades"
+    },
+    "footer": {
+      "faq": "Preguntas Frecuentes",
+      "services": "Servicios",
+      "about": "Sobre mí",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidad",
+      "copyright": "© 2024 Constanza Ramos. Todos los derechos reservados"
+    },
+    "language": {
+      "select": "Selecciona un idioma"
     }
   }
   

@@ -44,7 +44,7 @@
         <a href="#skills" data-i18n="nav.skills"></a>
         <a href="#contact" data-i18n="nav.contact"></a>
       </nav>
-      <select id="language-switcher" aria-label="Selecciona un idioma">
+      <select id="language-switcher" data-i18n-aria-label="language.select" aria-label="Select a language">
         <option value="en">English</option>
         <option value="es">Español</option>
       </select>
@@ -72,14 +72,14 @@
         ></a>
       </div>
       <div class="home-img">
-        <img src="./assets/profile-pic (10).png" alt="Profile picture" />
+        <img src="./assets/profile-pic (15).png" alt="Profile picture" />
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
         <img
-          src="./assets/profile-pic (11).png"
+          src="./assets/profile-pic (15).png"
           alt="lego avatar of Constanza"
         />
       </div>
@@ -127,52 +127,88 @@
     </section>
 
     <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
+      <h2 data-i18n="projects.title" class="heading">Projects</h2>
       <div class="projects-container">
         <div class="projects-box">
           <img src="./assets/Pomodoro-Timer.png" alt="" />
           <div class="projects-info">
-            <h4>Pomodoro Timer</h4>
-            <p>Timer Pomodoro para organizar tus tiempos </p>
-            <a href="https://github.com/constanzaramos/pomodoro-timer">
-              <i class="bx bx-link"></i>
-            </a>
-            <a href="https://constanzaramos.github.io/pomodoro-timer/">
-              <i class='bx  bx-reading-glass'></i> 
-            </a>
+            <h4 data-i18n="projects.pomodoro.title">Pomodoro Timer</h4>
+            <p data-i18n="projects.pomodoro.description">Timer Pomodoro para organizar tus tiempos </p>
+            <div class="projects-links">
+              <a href="https://github.com/constanzaramos/pomodoro-timer">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://constanzaramos.github.io/pomodoro-timer/">
+                <i class="bx bx-link-external"></i> 
+              </a>
+            </div>
           </div>
         </div>
         <div class="projects-box">
-          <img
-            src="./assets/portfolio-img.png"
-            alt="portfolio project screenshot"
-          />
+          <img src="./assets/fintech (1).png" alt="Fintech Landing project screenshot" />
           <div class="projects-info">
-            <h4>Portfolio</h4>
-            <p>
-              One page responsive personal Portfolio using HTML, CSS and
-              Javascript.
-            </p>
-            <a href="https://github.com/constanzaramos/coramba" target="_blank">
-              <i class="bx bx-link"></i>
-            </a>
+            <h4>Fintech Landing</h4>
+            <p>Modern fintech landing page showcasing financial technology solutions and services.</p>
+            <div class="projects-links">
+              <a href="https://github.com/constanzaramos/fintech-landing" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://fintech-landing-xi.vercel.app/" target="_blank">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="projects-box">
-          <img src="./assets/avatar (2).jpg" alt="" />
+          <img src="./assets/taller.png" alt="Taller Radar project screenshot" />
           <div class="projects-info">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">
-              <i class="bx bx-link"></i>
-            </a>
+            <h4>Taller Radar</h4>
+            <p>Web application project showcasing automotive services and workshop management.</p>
+            <div class="projects-links">
+              <a href="https://github.com/constanzaramos/taller-radar" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://taller-radar.vercel.app/" target="_blank">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img src="./assets/skincare.png" alt="Skincare Shop project screenshot" />
+          <div class="projects-info">
+            <h4>Skincare Shop</h4>
+            <p>Ecommerce de cosmética natural y cuidado personal desarrollado con React JS, SCSS Modules y Firebase Firestore.</p>
+            <div class="projects-links">
+              <a href="https://github.com/constanzaramos/skincare-shop" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://skincare-shop-hv6m.vercel.app/" target="_blank">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img src="./assets/recipe.png" alt="Recipe App project screenshot" />
+          <div class="projects-info">
+            <h4>My Recipe App</h4>
+            <p>Recipe search application built with vanilla JavaScript, HTML5, and CSS3. Search recipes by ingredients, category, or cuisine.</p>
+            <div class="projects-links">
+              <a href="https://github.com/constanzaramos/recipe-app" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://recipe-app-kappa-six-89.vercel.app/" target="_blank">
+                <i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="skills" id="skills">
-      <h2 class="heading">Skills</h2>
+      <h2 data-i18n="skills.title" class="heading">Skills</h2>
       <div class="skills-grid">
         <div class="skill-box">
           <i class="bx bxl-javascript"></i>
@@ -238,7 +274,7 @@
     </section>
 
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
+      <h2 data-i18n="contact.title" class="heading">Contact <span>Me</span></h2>
 
       <form
         action="https://formspree.io/f/mzzepzdb"
@@ -293,6 +329,7 @@
 
       <p
         id="form-message"
+        data-i18n="contact.success"
         style="
           display: none;
           color: white;
@@ -315,22 +352,22 @@
       </div>
       <ul>
         <li>
-          <a href="#">FAQ</a>
+          <a href="#" data-i18n="footer.faq">FAQ</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#services" data-i18n="footer.services">Services</a>
         </li>
         <li>
-          <a href="#about">About Me</a>
+          <a href="#about" data-i18n="footer.about">About Me</a>
         </li>
         <li>
-          <a href="#contact">Contact </a>
+          <a href="#contact" data-i18n="footer.contact">Contact </a>
         </li>
         <li>
-          <a href="#">Privacy Policy</a>
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
         </li>
       </ul>
-      <p class="copyright">&copy; 2024 Constanza Ramos. All rights reserved</p>
+      <p class="copyright" data-i18n="footer.copyright">&copy; 2024 Constanza Ramos. All rights reserved</p>
     </footer>
 
     <script src="script.js"></script>
